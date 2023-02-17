@@ -1,0 +1,70 @@
+body{
+  background-color: papayawhip;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+#container1{
+  background-color: rgb(215, 0, 64);
+  display: flex;
+  height: 7em;
+}
+
+#logo{
+  flex:1;
+}
+
+#navigation-bar{
+  flex:2;
+}
+
+#navigation-bar nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 1em 1em;
+}
+
+#navigation-bar nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+#navigation-bar nav ul li a:hover{
+  background: black;
+}
+
+#logo img{
+  width: 50%;
+  height: 100%;
+}
+
+/* Table Store Hours CSS styling */
+
+#table table{
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin: 1em 0;
+  min-width: 16em;
+}
+
+#table table tr th{
+  background-color:white;
+  text-align: left;
+  color: black;
+}
+
+#table table tr td{
+  background-color: white;
+}
+
+#table table caption{
+  background-color: #F71735;
+  color: white;
+}
+
+ 
