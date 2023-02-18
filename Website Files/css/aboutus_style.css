@@ -7,6 +7,18 @@ h1 {
   text-align: center;
 }
 
+#footer3{
+  background-color: rgb(215, 0, 64);
+  color: white;
+  text-align: center;
+  height: 5em;
+}
+
+#firstFooter3 {
+  padding-top: 1em;
+}
+
+
 #container4{
   background-color: rgb(215, 0, 64);
   display: flex;
