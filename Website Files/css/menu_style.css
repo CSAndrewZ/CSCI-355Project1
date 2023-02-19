@@ -54,3 +54,24 @@ h1 {
   width: 50%;
   height: 100%;
 }
+
+img{
+    width: 200px;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px black;
+    box-sizing: border-box;
+}
+
+section {
+    width: 250px;
+    height: 500px;
+    text-align: center;
+    background: rgb(253, 254, 255);
+    box-shadow: inset 0px 0px 20px black;
+    padding-top: 20px;
+    float: left;
+    box-sizing: border-box;
+    margin: 10px;
+ }
