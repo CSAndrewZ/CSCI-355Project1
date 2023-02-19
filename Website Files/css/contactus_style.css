@@ -54,3 +54,37 @@ h1 {
   width: 50%;
   height: 100%;
 }
+
+#table table{
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin: 1em 0;
+  min-width: 16em;
+}
+
+#table table tr th{
+  background-color:white;
+  text-align: left;
+  color: black;
+}
+
+#table table tr td{
+  background-color: white;
+}
+
+#table table caption{
+  background-color: #F71735;
+  color: white;
+}
+.btn-submit{
+  background-color: #F71735;
+  color: white;
+}
+.btn-cancel{
+  background-color: #F71735;
+  color: white;
+}
+.input{
+  width: 80%;
+  height: 30%;
+}

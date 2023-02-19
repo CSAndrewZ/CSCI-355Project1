@@ -1,69 +1,154 @@
 <!DOCTYPE html>
-
-<html lang="us">
-
-    <head>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta name="author" content="Parabjot Chander, Andrew Zheng, Benjamin Mushyakov">
+    <meta name="description" content="CSCI 355 Project 1: Typical Pizzeria Website">
       
-      <meta charset="UTF-8">
-      
-      <meta name="author" content="Parabjot Chander, Andrew Zheng, Benjamin Mushyakov">
-      
-      <meta name="description" content="CSCI 355 Project 1: Typical Pizzeria Website">
-      
-      <title> CMZ Pizzeria </title>
+    <title> CMZ Pizzeria </title>
+ 
+	<link rel="icon" href="image/pizza.ico" type="image/x-icon">
    
-      <link rel="icon" href="image/pizza.ico" type="image/x-icon">
-   
-      <link rel="stylesheet" href="css/contactus_style.css">
-    
-      <script src="js/contactus_script.js"></script> 
-    
-    </head>
+	<link rel="stylesheet" href="css/contactus_style.css">
+  
+	<script src="js/contactus_script.js"></script> 
 
-   <body>
+</head>
+<body>
+	<h1> Contact Us </h1>
       
-      <h1> Contact Us </h1>
-      
-      <div id="container3">   
-      
-      
-         <div id="logo3">
-            <img src="image/CMZ Pizzeria Logo.png" alt="Business Logo">
-         </div>
-      
-         <div id="navigation-bar3">   
          
-            <header>
+	<div id="container3">
+	   
+		<div id="logo3">
+            <img src="image/CMZ Pizzeria Logo.png" alt="Business Logo">
+         </div>     
+	
+	 <div id="navigation-bar3">   
+         
+		<header>
 
-               <nav>
-            
-                  <ul>
+		   <nav>
+		
+			  <ul>
 
-                     <li> <a href="homepage.html"> Home </a> </li>
-               
-                     <li> <a href="menu.html"> Our Menu </a> </li>
-               
-                     <li> <a href="aboutus.html"> About Us </a> </li>
-            
-                     <li> <a href="contactus.html"> Contact Us </a> </li>
-            
-                  </ul>
+				 <li> <a href="homepage.html"> Home </a> </li>
+		   
+				 <li> <a href="menu.html"> Our Menu </a> </li>
+		   
+				 <li> <a href="aboutus.html"> About Us </a> </li>
+		
+				 <li> <a href="contactus.html"> Contact Us </a> </li>
+		
+			  </ul>
 
-               </nav>  
-      
-            </header>
-   
-         </div>   
-   
-      </div>
-      
-      <hr>
-      
-      <div id="footer1">
-         <p id="firstFooter1"> Founders: Parabjot Chander, Benjamin Mushyakov and Andrew Zheng </p>
-         <p> Copyright 2023 &copy; CMZ Pizzeria </p>
-      </div>
-   
-   </body>
+		   </nav>  
+  
+		</header>
 
+	 </div>   
+	</div>
+	
+	  <div class="location">
+	  	<hr>
+	  	<table class="table" width="100%">
+	  		<tr>
+	  			<td  width="50%">
+	  				<div class="map" style="width: 100%;height: 500px;" id="map" >
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8088967142417!2d-73.8257503!3d40.7442304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2606f162bbc45%3A0xeeadcfe214c64145!2s58-59%20Main%20St%2C%20Flushing%2C%20NY%2011355!5e0!3m2!1sen!2sus!4v1676767167173!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+	  			</td>
+	  			<td width="50%">
+	  			  			
+	  		<form name="Contact Form" id="form" onsubmit="alert('Thank you, we will contact you as soon as possible')">
+	  			<table class="table" width="100%">
+	  			<tr>
+	  				<td><label>Name:</label></td>
+	  				<td><input class="input" required type="text" name="name" id="name"></td>
+	  			</tr>
+	  				
+	  			<tr>
+	  				<td><label>Email:</label></td>
+	  				<td><input class="input" required type="text" name="email" id="email"></td>
+	  			</tr>
+	  				
+	  			<tr>
+	  				<td><label>Message:</label></td>
+	  				<td><textarea class="input"  name="message" ></textarea></td>
+	  			</tr>
+	  			<tr>
+	  				<td></td>
+	  				<td><button class="btn-submit" type="submit">Send Message</button>
+	  					<button class="btn-cancel" href="contactus.html">Cancel</button></td>
+	  			</tr>
+	  			</table>
+	  		</form>
+
+					<h2>Address:</h2>
+					<b>CMZ Pizzeria</b><br>
+					58-59 Main Street,<br>
+					Flushing,<br>
+					Queens NY 11355.
+					<hr>
+					<h2>Contact Info:</h2>
+					<b>Email:</b>cmz@pizzeria.com<br>
+					<b>Number:</b> 718-453-1234
+					<div id = table> 
+					
+				</td>
+	  		</tr>
+
+	  	</table>
+	<div id=table>
+		<table>
+			<caption> Store Hours </caption>
+				<tr>
+					<th> Day </th>
+					<th> Time</th>
+				</tr>
+						
+				<tr>
+					<td>Sunday</td>
+					<td>10:00am - 5:00pm</td>
+				 </tr>
+							 
+				<tr>
+					<td>Monday</td>
+					 <td>9:00am - 8:00pm</td>   
+				</tr>
+						
+				<tr>
+					<td>Tuesday</td>
+					<td>9:00am - 8:00pm</td>
+				</tr>
+						
+			    <tr>
+					<td>Wednesday</td>
+					<td>9:00am - 8:00pm</td>
+				</tr>
+						
+				<tr>
+					<td>Thursday</td>
+					<td>10:30am - 9:00pm</td>
+						   </tr>
+						
+				<tr>
+					<td>Friday</td>
+					<td>10:30am - 9:00pm</td>
+				</tr>
+						
+				<tr>
+					<td>Saturday</td>
+					<td>10:30am - 9:00pm</td>
+				</tr>
+						
+		</table>
+	  </div>
+		<div id="footer1">
+			<p id="firstFooter1"> Founders: Parabjot Chander, Benjamin Mushyakov and Andrew Zheng </p>
+			<p> Copyright 2023 &copy; CMZ Pizzeria </p>
+		</div>
+		
+	</script>
+
+</body>
 </html>
