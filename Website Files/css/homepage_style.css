@@ -1,9 +1,18 @@
+:root{
+  --left-bg-color:white ;
+  --right-bg-color: rgba(87,84,236,0.7);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
 body{
-  background-color: papayawhip;
+  background-color: #ffefd5;
 }
 
 h1 {
-  color: black;
+  background-color: rgb(215, 0, 64);
+  color: white;
   text-align: center;
 }
 
@@ -12,6 +21,15 @@ h1 {
   color: white;
   text-align: center;
   height: 5em;
+}
+
+#discounts{
+  background-color: rgb(215, 0, 64);
+}
+
+#discounts h2 {
+  color: white;
+  text-align: center;
 }
 
 #firstFooter {
@@ -64,30 +82,6 @@ h1 {
   height: 100%;
 }
 
-/* Table Store Hours CSS styling */
-
-#table table{
-  border-collapse: collapse;
-  font-size: 0.9em;
-  margin: 1em 0;
-  min-width: 16em;
-}
-
-#table table tr th{
-  background-color:white;
-  text-align: left;
-  color: black;
-}
-
-#table table tr td{
-  background-color: white;
-}
-
-#table table caption{
-  background-color: #F71735;
-  color: white;
-}
-
 /* Udemy Course Feature: Intial Cards */
 
 .cards{
@@ -110,7 +104,7 @@ h1 {
 }
 
 .panel h3{
-  font-size: 24px;
+  font-size: 2em;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -125,5 +119,93 @@ h1 {
 
 .panel.active h3{
   opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+  left: 10em;
+  background-color: rgb(215, 0, 64);
+  color: white;
+  
+}
+
+/* Udemy Course Feature: Split Landing Page */ 
+
+.body2{
+  height: 30vh;
+  overflow: hidden;
+  margin:0;
+}
+
+.udemyCourse2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: papayawhip;
+  overflow: hidden; 
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left{
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--left-bg-color); */
+}
+
+.split.right{
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ /* background-color: var(--right-bg-color); */
+}
+
+.split.right, .split.left, .split.right::before, .split.left::before{
+  transition: all var(--speed) ease-in;
+}
+
+
+.fontsplit{
+  background-color: #D63230;
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  left: 60%;
+  top:20%;
+  transform: translate(-50%);
+  white-space: nowrap;
+}
+
+.hover-left .left{
+  width: var(--hover-width);
+}
+
+.hover-left .right{
+  width: var(--other-width);
+}
+
+.hover-right .right{
+  width: var(--hover-width);
+}
+
+.hover-right .left{
+  width: var(--other-width);
 }
 

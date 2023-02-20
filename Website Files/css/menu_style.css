@@ -3,7 +3,8 @@ body{
 }
 
 h1 {
-  color: black;
+  background-color: rgb(215, 0, 64);
+  color: white;
   text-align: center;
 }
 
