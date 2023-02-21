@@ -8,6 +8,18 @@ h1 {
   text-align: center;
 }
 
+h2{
+  background-color: rgb(215, 0, 64);
+  color: white;
+  text-align: center;
+}
+
+.price{
+  background-color: rgb(215, 0, 64);
+  color: white;
+  font-size: 1.5em;
+}
+
 #footer2{
   background-color: rgb(215, 0, 64);
   color: white;
@@ -56,7 +68,7 @@ h1 {
   height: 100%;
 }
 
-img{
+section img{
     width: 200px;
     display: block;
     margin: 0px auto;
@@ -76,3 +88,30 @@ section {
     box-sizing: border-box;
     margin: 10px;
  }
+
+button{
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(215, 0, 64);
+}
+
+button:focus{
+  outline: none;
+}
+
+button .circle{
+  position: absolute;
+  background-color: white;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale .5s ease-out;
+}
+
+@keyframes scale{
+  to{
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+  }
+}
